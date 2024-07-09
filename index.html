@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NotesApp</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  </head>
+  <body>
+    <header>
+      <app-bar></app-bar>
+    </header>
+
+    <main>
+      <div class="container">
+
+        <section class="landing-page">
+          <div class="welcome">
+            <h2>Hi, Welcome to </h2>
+            <h1>Notes App !</h1>
+          </div>
+
+          <div class="add-note-btn">
+            <button id="createNoteButton">
+              <i class="fa-solid fa-plus"></i>
+              <p>Create Note</p>
+            </button>
+          </div>
+        </section>
+
+
+        <section id="note" class="note">
+          
+          <div class="add-note-form">
+            <note-form></note-form>
+          </div>
+
+          <h1>- Notes List -</h1>
+          <div id="noteListContainer" class="note-list-container">
+
+            <div class="placeholder query-waiting">
+              Waiting for search keyword
+            </div>
+            <div class="placeholder search-loading">Loading</div>
+            <note-list></note-list>
+          </div>
+
+          <h1>- Archive Notes -</h1>
+          <div id="noteArchivedListContainer" class="note-list-container">
+
+            <notearchived-list></notearchived-list>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <footer-bar></footer-bar>
+    </footer>
+
+  </body>
+</html>
